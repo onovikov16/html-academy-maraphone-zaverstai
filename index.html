@@ -4,48 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Поможем сделать 
-        вашу квартиру
-        уютнее</h1>
-    <section>
-        <h2>О НАС</h2>
-        <img src="img\about_us.jpg" alt="Картинка секции 'О НАС'">
-        <ul class="about_us">
-            <li>5 ЛЕТ ОПЫТА</li>
-            <li>1000 ПРОЕКТОВ</li>
-            <li>10 НАГРАД</li>
-        </ul>
+    <!--В хедер можем обернуть логотип и навигацию страницы -->
+    <header class="main-header">
+        <img class="main-logo" src="">
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav-item">О компании</li>
+                <li class="main-nav-item">Портфолио</li>
+                <li class="main-nav-item">Команда</li>
+                <li class="main-nav-item">Как мы работаем</li>
+                <li class="main-nav-item">Отзывы</li>
+                <li class="main-nav-item">Оставить заявку</li>
+                <li class="main-nav-item">+7 (981) 857-46-24</li>
+            </ul>
+        </nav>
+        <div style="background-image: url("img\main_background.jpg");">
+            
+        </div>
+    </header>
+
+    <!--В main оборачиваем основное содержимое страницы -->
+    <main>
+
+        <h1 class="main-heading">Поможем сделать 
+            вашу квартиру
+            уютнее</h1>
+        <section >
+            <h2>О НАС</h2>
+            <img src="img\about_us.jpg" alt="Сервированный стол Картинка секции 'О НАС'">
+            <ul class="about_us">
+                <li>5 ЛЕТ ОПЫТА</li>
+                <li>1000 ПРОЕКТОВ</li>
+                <li>10 НАГРАД</li>
+            </ul>
+        </section>
+    <section class="portfolio">
+        <h2>НАШИ РАБОТЫ</h2>
+        <img alt="Спальня. Поверх фото рамещен текст секции">
+        <img alt="Кухня с высоким барным столом и стульями">
+        <img alt="Угол комнаты с широким креслом, журнальным столиком, горшками с растениями"> 
+        <img alt="Изысканная ванная комната">
+        <a href="#">Смотреть еще</a>
+        <img href="img\arrow_right.svg" alt="Стрелка вправо">
     </section>
     <section>
-        <h2>Наши работы</h2>
-        <img>
-        <img>
-        <img>
-        <img>
-        <a>Смотреть еще</a>
-        <img href="img\arrow_right" alt="Стрелка вправо">
-    </section>
-    <section>
-        <h2>КОМАНДА</h2>
-        <img>
+        <h2>КОМАНДа</h2>
+        <img src="img\team_masha.jpg">
         <img>
         <img>
         <p></p>
         <p></p>
         <p></p>
     </section>
-    <section>
-        <h2>КАК МЫ РБОТАЕМ</h2>
+    <section class="how-we-work">
+        <h2>КАК МЫ РАБОТАЕМ</h2>
         <ol>
             <li>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+            <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D- визуализацию.</li>
+            <li>Находим нужные магазины, помогаем с доставкой и оплатой товаров.</li>
+            <li>Воплощаем проект в жизнь:
+                расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
         </ol>
     </section>
+    <section class="reviews">
+        <h2>ОТЗЫВЫ</h2>
+        <button></button>
+        <blockquote cite="">
+            <p></p>
+            <p></p>
+            <p></p>
 
+        </blockquote>
+        <img>
+        <img>
+    </section>
+    <section class="order">
+        <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
+        <p>Оставьте свои контакты. Менеджер перезвонит
+            в удобное вам время и ответит на все вопросы.</p>
+         <input>
+         <input>
+         <button>Оставить заявку</button>   
+         <img>
+    </section>
+    </main>
 </body>
 </html>
