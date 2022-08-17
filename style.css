@@ -1,28 +1,138 @@
+
+@font-face {
+    font-family: Montserrat; 
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf); 
+   }
+
+   /*:not([class])*/ 
+a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/    
+    color: #533738;
+}
+
+
+body  {
+    border: 2px dashed blue;
+    margin-left: 270px;
+    font-family: Montserrat, monospace;
+    color: #533738;
+    font-weight: 400;
+
+}
 .main-header {
-    background-color: 000ff;
+    border: 2px dashed red;
+    width: 100%;
+    background-color:bisque;
     background: url(img/main_background.jpg) no-repeat ;
     background-size: 100%;
     width: 1400px;
     height: 715px;
     font-size: 16px;
+    line-height: 20px;
 }
 
-h1.main-header {
-    font-family: 'Montserat', Times, serif;
-    font-weight: 400;
-    font-size: 50;
-    line-height: 62;
-}
 
 .main-nav {
-    color: a52a2a;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        list-style: none; /*убираем маркеры списка*/
+        margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+        padding-left: 0; /*убираем левый отступ, равный 40px*/
+        margin-bottom: 80px;
+}
+.main-nav a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
+
+.main-heading {   
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 62px;
+    margin-left: 10%;
+ }
+
+ .main-header--descripion {
+    margin-left: 10%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+
+ }
+
+.order-link {
+    background-color: #CC8B86;    
+    padding: 20px 35px;
+    text-decoration: none;
+    margin-left: 10%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
 }
 
-ul.main-nav li {
-    display: inline; /* Отображать как строчный элемент */
-    margin-right: 5px; /* Отступ слева */
-    padding: 3px; /* Поля вокруг текста */
-    background-color: 000ff;
-    color: a52a2a;
-   }
+.about-us {
+    border: 1px dashed blue;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "about-us__heading about-us__heading"
+                        "about-us__img about-us__text"
+                        "advantages advantages";    
+    justify-content: center;
 
+}
+
+
+.about-us__heading {
+    margin: 0;
+    border: 1px dashed blue;
+    grid-area: about-us__heading;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.about-us__img {
+    border: 1px dashed blue;
+    margin: 0;
+    padding: 0px 20%;
+    grid-area: about-us__img;
+}
+
+.about-us__text {
+    border: 1px dashed blue;
+    margin: 0;
+    grid-area: about-us__text;
+    padding: 0px 10%;
+}
+
+.advantages {
+    background-color: #8D7370;
+    color: white;
+    padding: 40px;
+    display:flex;
+    justify-content: space-around;
+    align-content: space-around;
+    list-style: none; /*убираем маркеры списка*/
+
+    border: 1px solid black;
+    grid-area: advantages;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+}
+
+.advantage-digits {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 62px;   
+
+}
+
+.advantage {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+}
