@@ -13,14 +13,17 @@ a {
 
 body  {
     border: 2px dashed blue;
-    margin-left: 270px;
+    background-color: #EFE6E4;
+    margin-left: 360px;
     font-family: Montserrat, monospace;
     color: #533738;
     font-weight: 400;
+    max-width: 1400px;
 
 }
 .main-header {
     border: 2px dashed red;
+    margin-bottom: 40px;
     width: 100%;
     background-color:bisque;
     background: url(img/main_background.jpg) no-repeat ;
@@ -74,7 +77,7 @@ body  {
     margin: 0;
     padding: 0;
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-areas: "about-us__heading about-us__heading"
                         "about-us__img about-us__text"
                         "advantages advantages";    
@@ -84,7 +87,8 @@ body  {
 
 
 .about-us__heading {
-    margin: 0;
+    margin: 0 0 40px 0;
+    padding: 0px 0px;
     border: 1px dashed blue;
     grid-area: about-us__heading;
     text-align: center;
@@ -95,32 +99,41 @@ body  {
 
 .about-us__img {
     border: 1px dashed blue;
+
     margin: 0;
-    padding: 0px 20%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    padding: 0 0;
     grid-area: about-us__img;
 }
 
 .about-us__text {
     border: 1px dashed blue;
     margin: 0;
+    margin-left: 10%;
     grid-area: about-us__text;
-    padding: 0px 10%;
+    padding: 0px 0%;
+    max-width: 63%;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+
 }
 
 .advantages {
+    border: 5px dashed yellow;
     background-color: #8D7370;
     color: white;
-    padding: 40px;
+    padding: 80px 40px;
+    margin: 0;
     display:flex;
     justify-content: space-around;
     align-content: space-around;
     list-style: none; /*убираем маркеры списка*/
-
-    border: 1px solid black;
     grid-area: advantages;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 .advantage-digits {
