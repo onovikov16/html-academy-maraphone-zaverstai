@@ -1,0 +1,9 @@
+/* вместо этого поропбуем сделать на флексах
+ul.main-nav li {
+    display: inline;  Отображать как строчный элемент 
+    margin-right: 5px; /* Отступ слева */
+    padding: 3px; /* Поля вокруг текста */
+    background-color: 000ff;
+    color: a52a2a;
+   }
+*/
